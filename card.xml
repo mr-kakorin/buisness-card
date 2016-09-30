@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="card.xsl" ?>
+<card>
+    <name>
+      <firstname>Никита</firstname>
+      <lastname>Какорин</lastname>
+    </name>   
+     <education>
+      <university>SPbSU</university>
+      <faculty>AM-CP</faculty>
+      <course>3</course>      
+    </education>
+    <email>mr.kakorin@yandex.ru</email>
+</card>
