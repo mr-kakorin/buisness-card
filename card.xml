@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="card.xsl" ?>
+
+<!DOCTYPE card 
+[
+<!ELEMENT card (name,education,email)>
+<!ELEMENT name (firstname,lastname)>
+<!ELEMENT education (university,faculty,course)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
 <card>
     <name>
-      <firstname>Никита</firstname>
-      <lastname>Какорин</lastname>
+      <firstname>Nikita</firstname>
+      <lastname>Kakorin</lastname>
     </name>   
      <education>
       <university>SPbSU</university>

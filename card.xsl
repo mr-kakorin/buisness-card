@@ -4,27 +4,60 @@
   <html>
   	<head>
   		<title>About me</title>
-  	</head>
+      <link rel="stylesheet" href="style.css"/>
+    </head>
   <body>
-  	
-  <div class="Information">   		
-        <span style="font-style:italic">First Name: </span>
-      <xsl:value-of select="card/name/firstname"/><br/>
-        <span style="font-style:italic">Second Name: </span>
-      <xsl:value-of select="card/name/lastname"/><br/>
-        <span style="font-style:italic">University: </span>
-      <xsl:value-of select="card/education/university"/><br/>
-        <span style="font-style:italic">Faculty: </span>
-      <xsl:value-of select="card/education/faculty"/><br/>
-        <span style="font-style:italic">Course: </span>
-      <xsl:value-of select="card/education/course"/><br/>
-        <span style="font-style:italic">E-mail: </span>
-      <a href="mailto:{card/email}">
+      	<div class="lblMain">
+       <table>
+       <div class="lblTitle">
+       Personal Information
+       </div>
+        <tr>
+          <td class="lblProperty">Name:
+          <span class="lblText"> 
+          <xsl:value-of select="card/name/firstname"/>  &#160;
+          <xsl:value-of select="card/name/lastname"/> 
+          </span>
+          </td>
+        </tr>
+        
+        <span class="lblTitle">
+        Education
+        </span>
+        <tr>
+          <td class="lblProperty">University: <span class="lblText"> <xsl:value-of select="card/education/university"/> </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="lblProperty">Faculty:
+          <span class="lblText"> <xsl:value-of select="card/education/faculty"/> </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="lblProperty">Course:
+          <span class="lblText"> <xsl:value-of select="card/education/course"/></span> 
+          </td>
+        </tr>
+        
+        <div class="lblTitle">
+        Contact me
+        </div>
+        <tr>
+          <td class="lblProperty">E-mail:
+          <span class="lblText"> 
+            <a href="mailto:{card/email}">
           <xsl:value-of select="card/email"/>
       </a> 
-   </div>       
+           </span> 
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
   </html>
 </xsl:template>
+
 
 </xsl:stylesheet>
