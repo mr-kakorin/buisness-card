@@ -8,24 +8,20 @@
     </head>
   <body>
       	<div class="lblMain">
-       <table>
-       <div class="lblTitle">
-       Personal Information
-       </div>
+       <table>      
         <tr>
           <td class="lblProperty">Name:
+        
           <span class="lblText"> 
           <xsl:value-of select="card/name/firstname"/>  &#160;
           <xsl:value-of select="card/name/lastname"/> 
           </span>
           </td>
-        </tr>
-        
-        <span class="lblTitle">
-        Education
-        </span>
+        </tr>        
+   
         <tr>
-          <td class="lblProperty">University: <span class="lblText"> <xsl:value-of select="card/education/university"/> </span>
+          <td class="lblProperty">University: <span class="lblText"> 
+                  <xsl:value-of select="card/education/university"/> </span>
           </td>
         </tr>
 
@@ -41,12 +37,9 @@
           </td>
         </tr>
         
-        <div class="lblTitle">
-        Contact me
-        </div>
-        <tr>
+         <tr>
           <td class="lblProperty">E-mail:
-          <span class="lblText"> 
+                   <span class="lblText"> 
             <a href="mailto:{card/email}">
           <xsl:value-of select="card/email"/>
       </a> 
