@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Test_form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<form action="hundler.js" method="post" id="testForm">
+			<legend id="tit">Contact me</legend>
+			<p><label class="lbl">Subject:</label>
+				<select class="inForm" id="subject" name="subject" required class="inp">
+				</select>
+			</p>
+			<p><label class="lbl" >Name:</label>
+				
+				<input id="name" class="inForm" class="inp" type="text" name="person_name" required/>
+			</p>
+			<p>
+				<label class="lbl">Last name:</label>
+				
+				<input type="text" class="inForm" class="inp" id="last_name" name="person_last_name" required />
+			</p>
+			<p>
+				<label class="lbl">Phone number:</label>
+				
+				<input id="phoneNumber" class="inForm" class="inp" type="text" name="person_number" required />
+			</p>
+			
+			<p><input type="submit" class="inForm" class="inp" value="To contact"/>
+			</p>
+		</form>
+		<script type="text/javascript" src="hundler.js"></script>
+	</body>
+</html>

@@ -44,6 +44,13 @@
             </a> 
            </span>     
       </div>   
+      <div class="lblProperty">Contact:
+        <span class="lblText"> 
+            <a href="form.html">
+              <xsl:value-of select="//contactme"/>
+            </a> 
+           </span>     
+      </div>   
     </div>
   </body>
   </html>
